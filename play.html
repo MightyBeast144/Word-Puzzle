@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="index.html" id="back-button">
+        <img src="/Photos/BackButton.png" alt="Back" />
+    </a>
+
+    <!-- Falling leaves container -->
+    <div id="leaves-container"></div>
+
+    <div class="container">
+        <a href="level.html" class="link">
+            <button class="state-button" id="solid-button">
+                Solid
+            </button>
+        </a>
+        <a href="lilevel.html" class="link">
+            <button class="state-button locked" id="liquid-button" disabled>
+                Liquid
+                <span class="lock-icon">🔒</span>
+            </button>
+        </a>
+        <a href="glevel.html" class="link">
+            <button class="state-button locked" id="gas-button" disabled>
+                Gas
+                <span class="lock-icon">🔒</span>
+            </button>
+        </a>
+    </div>     
+    
+    <script src="play.js"></script>
+</body>
+</html>

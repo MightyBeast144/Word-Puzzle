@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <link rel="stylesheet" href="GamePlayLVL2.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 2</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/bull.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:30</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>Something you sit on, often found around a table.</li> <!-- Matches "VASE" -->
+                        <li>A flat surface where you place items like food or books.</li> <!-- Matches "LADDER" -->
+                        <li>A cushioned seat for more than one person, usually found in the living room.</li> <!-- Matches "TOWEL" -->
+                        <li>The place where you sleep at night.</li> <!-- Matches "CABINET" -->
+                        <li>You open and close this to enter or leave a room.</li> <!-- Matches "STOVE" -->
+                        <li>Tells you the time of day.</li> <!-- Matches "RULER" -->
+                        <li>A compartment that slides in and out, used for storage.</li> <!-- Matches "FRIDGE" -->
+                        <li>A reflective surface, often used when getting dressed.</li> <!-- Matches "CAMERA" -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GamePlayLVL2.js"></script>
+</body>
+</html>

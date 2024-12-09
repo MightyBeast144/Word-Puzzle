@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" href="LiGameplayLVL3.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="showSettings()"> SETTINGS</button>
+    <div class="modal" id="settingsModal">
+        <div class="settingscontent">
+            
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="removesettings()"> SETTINGS</button>
+            <p>djsidhhj</p>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 5</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/bull.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:00</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>Fuel for heavy-duty engines and trucks.</li> <!-- Matches "VASE" -->
+                        <li>Vital bodily fluid in animals and humans.</li> <!-- Matches "LADDER" -->
+                        <li>The liquid component of blood.</li> <!-- Matches "TOWEL" -->
+                        <li>Used as a cleaning agent and in fertilizers.</li> <!-- Matches "CABINET" -->
+                        <li>Carbonated drink containing quinine.</li> <!-- Matches "STOVE" -->
+                        <li>Used as an adhesive.</li> <!-- Matches "RULER" -->
+                        <li>Skincare product for targeted treatment.</li> <!-- Matches "FRIDGE" -->
+                        <li>Used in beauty products and medicine.</li> <!-- Matches "CAMERA" -->
+                        <li>Found in sour milk products and muscles.</li> <!-- Matches "NAIL" -->
+                        <li>Used in medical treatments.</li> <!-- Matches "WALLET" -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="LiGameplayLVL3.js"></script>
+</body>
+</html>

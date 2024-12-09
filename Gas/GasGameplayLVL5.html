@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" href="GasGameplayLVL5.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="showSettings()"> SETTINGS</button>
+    <div class="modal" id="settingsModal">
+        <div class="settingscontent">
+            
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="removesettings()"> SETTINGS</button>
+            <p>djsidhhj</p>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 5</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/bull.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:00</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>The spread of gas molecules in a space.</li> <!-- Matches "VASE" -->
+                        <li>A state of matter where gas is ionized.</li> <!-- Matches "LADDER" -->
+                        <li>The process of breathing out gases from the lungs.</li> <!-- Matches "TOWEL" -->
+                        <li>The process of breathing in gases.</li> <!-- Matches "CABINET" -->
+                        <li>Gas that is burned off in oil and gas extraction processes.</li> <!-- Matches "STOVE" -->
+                        <li>Solvent used in oil extraction and laboratory applications.</li> <!-- Matches "RULER" -->
+                        <li>The lightest and most abundant element.</li> <!-- Matches "FRIDGE" -->
+                        <li>Process where liquid turns into gas.</li> <!-- Matches "CAMERA" -->
+                        <li>The SI unit of pressure.</li> <!-- Matches "NAIL" -->
+                        <li>Process of gas exchange in living organisms.</li> <!-- Matches "WALLET" -->
+                        <li>Group of compounds used as antifreeze.</li> <!-- Matches "WALLET" -->
+                        <li>A toxic gas used in chemical manufacturing.</li> <!-- Matches "WALLET" -->
+                        <li>Gases that are toxic or harmful to human health.</li> <!-- Matches "WALLET" -->
+                        <li>A group of gases that are inert and do not readily react with other elements.</li> <!-- Matches "WALLET" -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GasGameplayLVL5.js"></script>
+</body>
+</html>

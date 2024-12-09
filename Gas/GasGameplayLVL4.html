@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" href="GasGameplayLVL4.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="showSettings()"> SETTINGS</button>
+    <div class="modal" id="settingsModal">
+        <div class="settingscontent">
+            
+    <button style="font-size: 100px; position: absolute; z-index: 999;" onclick="removesettings()"> SETTINGS</button>
+            <p>djsidhhj</p>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 5</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/bull.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:00</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>Liquid at room temperature but has a gaseous state; used in flame retardants.</li> <!-- Matches "VASE" -->
+                        <li>Component of natural gas; used as a fuel and in petrochemical production.</li> <!-- Matches "LADDER" -->
+                        <li>Gas used in semiconductor manufacturing; toxic and flammable.</li> <!-- Matches "TOWEL" -->
+                        <li>Highly reactive gas used in chemical synthesis and toothpaste.</li> <!-- Matches "CABINET" -->
+                        <li>Rare, colorless gas used in high-intensity lamps and as a general anesthetic.</li> <!-- Matches "STOVE" -->
+                        <li>Noble gas used in neon signs; non-reactive.</li> <!-- Matches "RULER" -->
+                        <li>A gas used as a fuel in engines.</li> <!-- Matches "FRIDGE" -->
+                        <li>A volatile gas used as an industrial solvent.</li> <!-- Matches "CAMERA" -->
+                        <li>A primary component of natural gas.</li> <!-- Matches "NAIL" -->
+                        <li>A gas used in the production of plastics and resins.</li> <!-- Matches "WALLET" -->
+                        <li>A fine mist of liquid dispersed in gas.</li> <!-- Matches "WALLET" -->
+                        <li>Tiny droplets of liquid suspended in air.</li> <!-- Matches "WALLET" -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GasGameplayLVL4.js"></script>
+</body>
+</html>

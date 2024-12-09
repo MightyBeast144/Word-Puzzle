@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/SuperKinds.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Photos/LIQBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: 1;
+}
+
+h1 {
+    text-shadow: 4px 4px 10px grey;
+    font-size: 90px;
+    color: rgb(12, 71, 197);
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: -300px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px white;
+}
+
+.levels-grid {
+    display: flex;
+    justify-content: center; /* Center the buttons in a row */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    width: 60vh;
+    margin-top: 300px;
+}
+
+.level-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: rgb(5, 60, 120);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100px; /* Fixed width for consistency */
+    transition: background-color 0.3s ease;
+}
+
+.level-button:hover {
+    background-color: rgb(9, 104, 145);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .level-button {
+        font-size: 20px;
+        padding: 8px 16px;
+        width: 80px;
+    }
+}
+
+#back-button {
+    position: fixed; /* Make it stay in the top-left corner even when scrolling */
+    top: 20px; /* Adjust distance from the top */
+    left: 20px; /* Adjust distance from the left */
+    width: 40px; /* Adjust the size of the button */
+    height: 40px; /* Adjust the size of the button */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+#back-button img {
+    width: 300%;
+    height: 300%;
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    transition: transform 0.3s ease; /* Optional: add a hover effect */
+}
+
+#back-button img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+#leaves-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    margin-top: -45px;
+}
+
+.leaf {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('/Photos/bubbles.png'); /* Replace with your leaf image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rise linear infinite;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100vh) rotate(0deg); /* Start from the bottom */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg); /* Move to the top */
+        opacity: 0.5;
+    }
+}

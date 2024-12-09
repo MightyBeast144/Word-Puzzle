@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" href="GameplayLVL3.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 3</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/grizzly.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:00</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>A decorative container used for holding flowers.</li> <!-- Matches "VASE" -->
+                        <li>Used to reach high places. Typically made of wood or metal.</li> <!-- Matches "LADDER" -->
+                        <li>A piece of fabric used for drying off or wiping.</li> <!-- Matches "TOWEL" -->
+                        <li>Storage furniture found in kitchens or bathrooms.</li> <!-- Matches "CABINET" -->
+                        <li>A kitchen appliance used for cooking.</li> <!-- Matches "STOVE" -->
+                        <li>For measuring length.</li> <!-- Matches "RULER" -->
+                        <li>An appliance for keeping food and drinks cold.</li> <!-- Matches "FRIDGE" -->
+                        <li>Used for capturing photos and videos.</li> <!-- Matches "CAMERA" -->
+                        <li>A metal fastener for wood or other materials.</li> <!-- Matches "NAIL" -->
+                        <li>For holding money and cards.</li> <!-- Matches "WALLET" -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GameplayLVL3.js"></script>
+</body>
+</html>

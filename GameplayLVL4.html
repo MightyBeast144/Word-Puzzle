@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Level 1</title>
+    <link rel="stylesheet" href="GameplayLVL4.css">
+</head>
+<body>
+
+    <div class="modal" id="timeOutModal">
+        <div class="timeoutmodalcontent">
+            <h1>TALO KA</h1>
+        </div>
+    </div>
+    <div class="container" >
+        <h1 class="level">LEVEL 4</h1>
+        
+        <div class="game-area">
+            <div class="grid">
+                <table id="wordGrid">
+                    <!-- Grid cells are generated in JavaScript -->
+                </table>
+            </div>
+            
+            <div class="clue-section">
+                <!-- Container for grizzly image and hearts above it -->
+                <div class="grizzly-container">
+                    <!-- Hearts or health bar positioned above the grizzly image -->
+                    <div class="hearts">
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                        <img class="heart" src="/Photos/heart.png" alt="Heart" />
+                    </div>
+                    
+                    <!-- Grizzly image -->
+                    <img src="/Photos/bull.png" alt="Tiger" class="tiger-image">
+                    
+                    <div class="timer">Time: <span id="timer">2:00</span></div>
+                </div>
+                
+                <div class="clue-box">
+                    <h2>Clues</h2>
+                    <ul id="clueList">
+                        <li>A strong alloy made from iron, often used in construction.</li> <!-- Matches "VASE" -->
+                        <li>A metal used in coins and for plating to prevent corrosion.</li> <!-- Matches "LADDER" -->
+                        <li>An element found in all living things and the main component of coal.</li> <!-- Matches "TOWEL" -->
+                        <li>A dense lustrous yellow precious metal.</li> <!-- Matches "CABINET" -->
+                        <li>An alloy of copper and zinc, used in musical instruments.</li> <!-- Matches "STOVE" -->
+                        <li>A natural material used to make pottery, bricks and tiles.</li> <!-- Matches "RULER" -->
+                        <li>A common igneous rocks, often used for counter tops and buildings.</li> <!-- Matches "FRIDGE" -->
+                        <li>A textile fiber obtained from sheep.</li> <!-- Matches "CAMERA" -->
+                        <li>A green stone often used in jewelry.</li> <!-- Matches "NAIL" -->
+                        <li>A metal used to coat iron to prevent rusting, found in batteries.</li> <!-- Matches "WALLET" -->
+                        <li>A precious metal known for its conductivity and reflectivity.</li>
+                        <li>A light volcanic rock used as an abrasive.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GameplayLVL4.js"></script>
+</body>
+</html>
